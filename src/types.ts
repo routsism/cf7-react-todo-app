@@ -5,7 +5,6 @@ export type Action =
     | {type: "DELETE"; payload: number}
     | {type: "EDIT"; payload: {id: number; newText: string}};
 
-
 export type TodoFormProps = {
     dispatch: React.Dispatch<Action>;
 };
