@@ -1,5 +1,5 @@
 import {Trash2} from "lucide-react";
-import type {TodoListProps} from "../types.tsx";
+import type {TodoListProps} from "../types.ts";
 
 const TodoList = ({todos, dispatch}: TodoListProps) => {
 
@@ -26,5 +26,6 @@ const TodoList = ({todos, dispatch}: TodoListProps) => {
         </>
     )
 }
+
 
 export default TodoList;

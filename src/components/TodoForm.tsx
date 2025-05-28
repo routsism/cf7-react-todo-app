@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type {TodoFormProps} from "../types.tsx";
+import type {TodoFormProps} from "../types.ts";
 
 const TodoForm = ({ dispatch }: TodoFormProps)  => {
     const [text, setText] = useState("");
@@ -7,6 +7,7 @@ const TodoForm = ({ dispatch }: TodoFormProps)  => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setText(e.target.value);
     };
+
 
     const handleSubmit = (e: React.FormEvent) =>{
         e.preventDefault();
